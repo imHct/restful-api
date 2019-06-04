@@ -25,10 +25,16 @@ class Common extends Controller
     protected $rules = array(
         'User' => array(
             'login' => array(
-                'user_name' => ['require', 'chsDash', 'max' => 20],
+                'user_name' => 'require|chsDash|max=>20',
                 'user_pwd'  => 'require|length:32'
             ),
         ),
+        'Code'=> array(
+            'get_code' => array(
+                'username' => 'require',
+                'is_exist'  => 'require|number|length:1'
+            ),
+        )
     );
 
     protected function _initialize()
@@ -89,7 +95,6 @@ class Common extends Controller
      */
     public function check_params($arr)
     {
-        //halt($arr);
         //获取参数验证规则
         $rule = $this->rules[$this->request->controller()][$this->request->action()];
         //验证参数并返回错误
@@ -98,6 +103,76 @@ class Common extends Controller
             $this->return_msg(400, $this->validater->getError());
         }
         return $arr;
+    }
+
+    /**
+     * 检测用户民并返回用户名类别
+     * @param $username [用户名可能是邮箱或者是手机]
+     * @return string [检测结果]
+     */
+    public function check_username($username)
+    {
+        //判断是否为邮箱
+        $is_email = Validate::is($username,'email')?1:0;
+        //判断是否为手机
+        $is_phone = preg_match('/^1[34578]\d{9}$/',$username)?4:2;
+        //最终结果
+        $flag = $is_email + $is_phone;
+        switch ($flag){
+            //not email not phone
+            case 2:
+                $this->return_msg(400,'邮箱或手机号不正确');
+                break;
+            //is email not phone
+            case 3:
+                return 'email';
+                break;
+            //is phone not email
+            case 4:
+                return 'phone';
+                break;
+
+        }
+    }
+
+    public function check_exist($value, $type, $exist)
+    {
+        $type_num = $type == 'phone' ? 2 : 4;
+        $flag = $type_num + $exist;
+        $phone_res = db('user')->where('user_phone',$value)->find();
+        $email_res = db('user')->where('user_email',$value)->find();
+        switch ($flag){
+            case 2:
+                if ($phone_res){
+                    $this->return_msg(400,'此手机号已被占用');
+                }
+                break;
+            case 3:
+                if (!$phone_res){
+                    $this->return_msg(400,'');
+                }
+                break;
+            case 4:
+                if ($email_res){
+                    $this->return_msg(400,'此邮箱已被占用');
+                }
+                break;
+            case 5:
+                if (!$email_res){
+                    $this->return_msg(400,'此邮箱不存在');
+                }
+                break;
+        }
+    }
+
+    public function send_code_to_phone($username, $code)
+    {
+        echo 'send_code_to_phone';
+    }
+
+    public function send_code_to_email($username, $code)
+    {
+        echo 'send_code_to_email';
     }
 
     /**
