@@ -10,12 +10,6 @@ namespace app\api\controller;
 
 use phpmailer\PHPMailer;
 
-use sms\SmsMultiSender;
-
-use sms\SmsSenderUtil;
-
-use sms\SmsSingleSender;
-
 class Code extends Common
 {
     public function get_code()
@@ -36,7 +30,7 @@ class Code extends Common
     /**
      * 通过手机/邮箱获取验证码
      * @param $username [用户名]
-     * @param $type [类型]
+     * @param $type [手机号或邮箱]
      * @param $exist [手机号/邮箱是否应该存在于数据库中 1：是 0：否]
      * return [json] [api返回的json数据]
      */
@@ -49,7 +43,7 @@ class Code extends Common
         }
         //判断手机号码是否存在
         $this->check_exist($username, $type, $exist);
-        //检查验证码请求频率 30秒一次
+        //检查验证码请求频率 30秒一次 ？判断session是否有值 有true 没有false
         if (session('?' . $username . '_last_send_time')) {
             if (time() - session($username . '_last_send_time') < 30) {
                 $this->return_msg(400, $type_name . '验证码，每30秒只能发送一次');
@@ -61,7 +55,7 @@ class Code extends Common
         $md5_code = md5($username . '_' . md5($code));
         session($username . '_code', $md5_code);
         //使用session储存验证码发送的时间
-        session($username . '_last_send_time', time());
+        session($username.'_last_send_time', time());
         //发送验证码
         if ($type == 'phone') {
             $this->send_code_to_phone($username, $code);
@@ -82,16 +76,21 @@ class Code extends Common
         return rand($min, $max);
     }
 
+    /**
+     * 手机发送验证码[SDK]
+     * @param $phone [手机号码]
+     * @param $code  [验证码]
+     * return [返回成功或错误的信息]
+     */
     public function send_code_to_phone($phone, $code)
     {
-        try {
-            $ssender = new SmsSingleSender('1400216346', 'a30ce858f0788bea403f47e7f7200590');
-            $result  = $ssender->send(0, "86", $phone,
-                "【test】您的验证码是: $code");
-            $rsp     = json_decode($result);
-            echo $rsp;
-        } catch (\Exception $e) {
-            echo dump($e);
+        import('dysms.api_demo.SmsDemo', EXTEND_PATH);
+        $send = new \SmsDemo();
+        $info =  $send->sendSms($phone, $code);
+        if ($info->Message != 'OK'){
+            $this->return_msg(400,$info->Message);
+        }else{
+            $this->return_msg(200,'手机验证码已发送，请在一分钟内验证！');
         }
     }
 
