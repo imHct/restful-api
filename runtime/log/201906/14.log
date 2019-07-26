@@ -1,0 +1,1937 @@
+---------------------------------------------------------------
+[ 2019-06-14T17:39:08+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/1
+[运行时间：0.187167s] [吞吐率：5.34req/s] [内存消耗：2,293.28kb] [文件加载：47]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '284',
+  'content-type' => 'multipart/form-data; boundary=--------------------------113310877906477374178089',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'e64d104b-bab6-43ca-b5c6-2f232d622f7c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '1',
+  'num' => NULL,
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001569s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'restful-api.api_atricle' doesn't exist[D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-06-14T17:39:39+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/1
+[运行时间：0.168925s] [吞吐率：5.92req/s] [内存消耗：2,251.86kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '284',
+  'content-type' => 'multipart/form-data; boundary=--------------------------899041944336077383445659',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '2c2af4e7-8841-4bb5-88b5-25fa430894dd',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '1',
+  'num' => NULL,
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001439s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.019602s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 1 LIMIT 1 [ RunTime:0.001629s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 1 LIMIT 0,10 [ RunTime:0.001674s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:40:08+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/1
+[运行时间：0.154794s] [吞吐率：6.46req/s] [内存消耗：2,251.83kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '280',
+  'content-type' => 'multipart/form-data; boundary=--------------------------535132046682743303133079',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '5c97a882-3093-460b-aed0-814f6a96225c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '1',
+  'num' => NULL,
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001428s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 1 LIMIT 1 [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 1 LIMIT 0,10 [ RunTime:0.001321s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:40:15+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/1
+[运行时间：0.171715s] [吞吐率：5.82req/s] [内存消耗：2,251.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '163',
+  'content-type' => 'multipart/form-data; boundary=--------------------------643584353130126389850836',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'd466c2d4-db05-4315-9775-2fa521c99c7d',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '1',
+  'num' => NULL,
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001384s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.014393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 1 LIMIT 1 [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 1 LIMIT 0,10 [ RunTime:0.002225s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:40:33+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3
+[运行时间：0.150205s] [吞吐率：6.66req/s] [内存消耗：2,251.79kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------686311144356052542763110',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '156181d9-0a2b-428c-b5a7-b57066c22ad7',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => NULL,
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001509s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011782s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,10 [ RunTime:0.001289s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:40:43+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/
+[运行时间：0.149244s] [吞吐率：6.70req/s] [内存消耗：2,251.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------565781960500896133660394',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '5c12fe9a-2ac9-494f-9aae-9b38828834b9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001345s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001426s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,1 [ RunTime:0.001236s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:40:49+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/3
+[运行时间：0.155930s] [吞吐率：6.41req/s] [内存消耗：2,251.42kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------131143175291445061789841',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '76f827c0-44a0-463c-ba30-b560c1a51565',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.015822s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 2,1 [ RunTime:0.001237s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:01+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/
+[运行时间：0.149549s] [吞吐率：6.69req/s] [内存消耗：2,251.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------268479012427080838457782',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '0ef5f9c9-b46d-4e5d-8fb7-82f9cdf1c55d',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,1 [ RunTime:0.001293s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:04+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/2/
+[运行时间：0.153698s] [吞吐率：6.51req/s] [内存消耗：2,251.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------060510127304761854122438',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '81b54271-ae62-4fee-b177-bd33c676889b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '2',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001582s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,2 [ RunTime:0.001481s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:07+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/4/
+[运行时间：0.156306s] [吞吐率：6.40req/s] [内存消耗：2,251.82kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------795353472592602794399025',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'fadbed91-fb98-4106-9d9c-6f8b8cf98476',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '4',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001502s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011546s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,4 [ RunTime:0.001302s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:17+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/3
+[运行时间：0.156929s] [吞吐率：6.37req/s] [内存消耗：2,251.42kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------721371149580125179486473',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'b1bcb791-701b-45f6-ab2b-585d8d64af51',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001392s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 2,1 [ RunTime:0.001253s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:24+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/2/4
+[运行时间：0.153156s] [吞吐率：6.53req/s] [内存消耗：2,251.27kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------950541688698612411946758',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '9ec027ae-d9a7-4cf0-9bff-3118e048e463',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '2',
+  'page' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001443s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011996s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001335s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 6,2 [ RunTime:0.001264s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:30+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/4
+[运行时间：0.152503s] [吞吐率：6.56req/s] [内存消耗：2,251.27kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------611645311778184998321669',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '4bd30c9f-3cc3-45fd-91dd-ca92fb8e3d02',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001435s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011943s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 3,1 [ RunTime:0.001281s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:41:36+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/3
+[运行时间：0.162187s] [吞吐率：6.17req/s] [内存消耗：2,251.42kb] [文件加载：43]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------247743816426438054064623',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '457e3595-dc04-4ebb-b30c-49eaca4a3e30',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001881s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.019789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 2,1 [ RunTime:0.001231s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:45:41+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/3
+[运行时间：0.158648s] [吞吐率：6.30req/s] [内存消耗：2,170.55kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------298518818768053594672558',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '67d3597a-cf33-4aa5-a5c4-155cc932a6ac',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002694s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 2,1 [ RunTime:0.001400s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:45:53+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/3
+[运行时间：0.143458s] [吞吐率：6.97req/s] [内存消耗：2,170.53kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------349736373987852233865916',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '91c57d87-d475-4b1b-b3aa-979daa50af2b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001823s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 2,1 [ RunTime:0.001534s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:46:06+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/1/
+[运行时间：0.140092s] [吞吐率：7.14req/s] [内存消耗：2,170.84kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------329975645170424330096419',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '4afd7612-a574-4aa5-a137-169398b380b9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '1',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001489s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012010s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,1 [ RunTime:0.001239s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:46:12+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/2/
+[运行时间：0.148582s] [吞吐率：6.73req/s] [内存消耗：2,171.60kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------440956805665011347906673',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'a2163c3d-ba93-4496-8c4a-250919cb0d25',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '2',
+  'page' => NULL,
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001524s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,2 [ RunTime:0.001338s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:49:50+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/2/4
+[运行时间：0.146236s] [吞吐率：6.84req/s] [内存消耗：2,169.61kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------135844660374208309339063',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'edbe1020-b9f0-4ad0-b4aa-dbf9458c71e9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '2',
+  'page' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001696s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012047s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 6,2 [ RunTime:0.001251s ]
+---------------------------------------------------------------
+[ 2019-06-14T17:50:10+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/10/1
+[运行时间：0.124525s] [吞吐率：8.03req/s] [内存消耗：2,172.01kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------144440896142239280189981',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'b656e54c-06be-48f7-b7d8-d689d86d3c3b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '10',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.009714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,10 [ RunTime:0.001115s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:04:16+08:00 ] 127.0.0.1 POST api.restful-api.com/article
+[运行时间：0.142446s] [吞吐率：7.02req/s] [内存消耗：1,369.60kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '432',
+  'content-type' => 'multipart/form-data; boundary=--------------------------119999279511568171988685',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '53e1c26f-0bcd-44e3-96d1-c39ac675c1a3',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_uid' => '3',
+  'article_title' => '2131231231',
+  'article_content' => '&lt;script&gt;alert(\'213\')&lt;/script&gt;',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:05:20+08:00 ] 127.0.0.1 POST api.restful-api.com/Article/article_add
+[运行时间：0.148727s] [吞吐率：6.72req/s] [内存消耗：2,166.02kb] [文件加载：39]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'Article',
+    2 => 'article_add',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '432',
+  'content-type' => 'multipart/form-data; boundary=--------------------------012267988687542824002369',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '2e167875-d3e0-4260-a599-ff508c4fa64b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_uid' => '3',
+  'article_title' => '2131231231',
+  'article_content' => '&lt;script&gt;alert(\'213\')&lt;/script&gt;',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_add[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002964s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.019959s ]
+[ sql ] [ SQL ] INSERT INTO `api_article` (`article_uid` , `article_title` , `article_content` , `article_ctime`) VALUES (3 , '2131231231' , '&lt;script&gt;alert(\'213\')&lt;/script&gt;' , 1560506720) [ RunTime:0.003697s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:06:14+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/10/1
+[运行时间：0.159375s] [吞吐率：6.27req/s] [内存消耗：2,178.59kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------507232790899393198162288',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'd239c5f6-b4b1-46cd-bae9-f59772df0506',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '10',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001870s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,10 [ RunTime:0.001257s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:06:48+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/4
+[运行时间：0.187516s] [吞吐率：5.33req/s] [内存消耗：2,296.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '4228285b-89cf-4ab1-8b50-f76316fc89e3',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '4',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001815s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.016544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 4 LIMIT 1 [ RunTime:0.001356s ]
+[ error ] [2]Division by zero[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:43]
+---------------------------------------------------------------
+[ 2019-06-14T18:07:44+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/4
+[运行时间：0.181949s] [吞吐率：5.50req/s] [内存消耗：2,296.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'd59d8d30-340c-4939-bb6e-ee4274a45c9b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '4',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001903s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 4 LIMIT 1 [ RunTime:0.001382s ]
+[ error ] [2]Division by zero[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:43]
+---------------------------------------------------------------
+[ 2019-06-14T18:08:29+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/4
+[运行时间：0.151625s] [吞吐率：6.60req/s] [内存消耗：2,243.76kb] [文件加载：44]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '282939db-7229-4249-80f1-7a430f8f28d3',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: page[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:67]
+---------------------------------------------------------------
+[ 2019-06-14T18:10:04+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/4
+[运行时间：0.129475s] [吞吐率：7.72req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'ed7a435a-3dea-4147-beff-887e6d7ec3fd',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '4',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:11:11+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/2
+[运行时间：0.124967s] [吞吐率：8.00req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '9a279e33-644e-46be-9190-7d3f5ecd2a81',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '2',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:11:15+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.123850s] [吞吐率：8.07req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '22318171-d052-41e0-aab4-48f7505b6a92',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '3',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:11:18+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.137051s] [吞吐率：7.30req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '33de90a2-4c09-4474-82bb-eeeb1bf74048',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '3',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:11:46+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.132359s] [吞吐率：7.56req/s] [内存消耗：1,367.98kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'a95324e4-19b9-4069-8da2-3d43c421246b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '3',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:11:54+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3
+[运行时间：0.189082s] [吞吐率：5.29req/s] [内存消耗：2,296.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'c2aea47d-72f1-4e4f-8bd5-3f626aa74510',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003022s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018583s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001334s ]
+[ error ] [2]Division by zero[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:43]
+---------------------------------------------------------------
+[ 2019-06-14T18:12:32+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.124799s] [吞吐率：8.01req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '4d1b30a4-1f42-4cc6-853a-de74822da4e4',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '3',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:12:40+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3
+[运行时间：0.191163s] [吞吐率：5.23req/s] [内存消耗：2,296.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '4b26b288-53bc-42b6-b7af-9368b8c03606',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002238s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.020153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001429s ]
+[ error ] [2]Division by zero[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:43]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:00+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3
+[运行时间：0.211010s] [吞吐率：4.74req/s] [内存消耗：2,300.20kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'ec19f0b8-5fb3-4104-a1c8-54bd11e98b8e',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001942s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.016187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,20 [ RunTime:0.001262s ]
+[ error ] [8]未定义变量: page_num[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:54]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:06+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3
+[运行时间：0.182120s] [吞吐率：5.49req/s] [内存消耗：2,296.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'e1a70296-1545-4066-93a4-4d22f82d68f0',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '',
+  'page' => '',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001785s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018548s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001195s ]
+[ error ] [2]Division by zero[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:43]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:21+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.127246s] [吞吐率：7.86req/s] [内存消耗：1,368.07kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'e8150094-780e-4fc5-9997-d67fc9b4ffcb',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  0 => '3',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:151]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:31+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/10/1
+[运行时间：0.145787s] [吞吐率：6.86req/s] [内存消耗：2,178.59kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------856758452767481567209406',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'cc01714e-1eb0-4942-8a75-f734a9950477',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '10',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001860s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.014276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3 LIMIT 1 [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3 LIMIT 0,10 [ RunTime:0.001240s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:34+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.152209s] [吞吐率：6.57req/s] [内存消耗：2,243.76kb] [文件加载：44]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '93ba4e21-9bfc-47f9-8699-8058ae13990b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: page[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:67]
+---------------------------------------------------------------
+[ 2019-06-14T18:13:54+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.184545s] [吞吐率：5.42req/s] [内存消耗：2,294.91kb] [文件加载：45]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '01659674-f487-416f-a572-d5ba33750e09',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001403s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018657s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_id` = 3 LIMIT 1 [ RunTime:0.001342s ]
+[ error ] [8]未定义数组索引: article_content[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php:68]
+---------------------------------------------------------------
+[ 2019-06-14T18:14:46+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.149442s] [吞吐率：6.69req/s] [内存消耗：2,252.77kb] [文件加载：42]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'cfe3dc4e-52ba-4d04-8ef9-da2348c376cb',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001526s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.012391s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_id` = 3 LIMIT 1 [ RunTime:0.001906s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:15:14+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/3
+[运行时间：0.133812s] [吞吐率：7.47req/s] [内存消耗：2,170.19kb] [文件加载：39]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '949f7300-1b41-48ba-98af-cd244259fad8',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '3',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001896s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.017400s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`article_content`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_id` = 3 LIMIT 1 [ RunTime:0.001300s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:15:23+08:00 ] 127.0.0.1 GET api.restful-api.com/article/1/1/4
+[运行时间：0.131474s] [吞吐率：7.61req/s] [内存消耗：2,170.28kb] [文件加载：39]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'e061057b-a9e8-4b77-9721-4eedf34f38e4',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_detail[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001516s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.011817s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`article_content`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_id` = 4 LIMIT 1 [ RunTime:0.001375s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:26:39+08:00 ] 127.0.0.1 PUT api.restful-api.com/article?article_id=4
+[运行时间：0.099254s] [吞吐率：10.08req/s] [内存消耗：1,487.34kb] [文件加载：34]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'update_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '267d6997-7031-4fa0-806c-d540f3e97ece',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->update_article[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-14T18:26:44+08:00 ] 127.0.0.1 PUT api.restful-api.com/article?article_id=
+[运行时间：0.085601s] [吞吐率：11.68req/s] [内存消耗：1,409.02kb] [文件加载：32]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'update_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '931b0b57-4060-4ce8-a785-df6799ee3167',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_id' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-14T18:26:47+08:00 ] 127.0.0.1 PUT api.restful-api.com/article?article_id=4
+[运行时间：0.104004s] [吞吐率：9.62req/s] [内存消耗：1,487.41kb] [文件加载：34]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'update_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'c9bd5eda-88c8-4710-a868-2c0c2555e5bb',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->update_article[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-14T18:31:51+08:00 ] 127.0.0.1 PUT api.restful-api.com/article?article_id=4&article_title=%E6%97%B6%E9%97%B4%E6%B5%81%E9%80%9D&article_content=123456
+[运行时间：0.154528s] [吞吐率：6.47req/s] [内存消耗：2,254.13kb] [文件加载：42]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'update_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'baf17e8b-4a94-4323-a276-06ea3a110f2d',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_id' => '4',
+  'article_title' => '时间流逝',
+  'article_content' => '123456',
+)
+[ info ] [ RUN ] app\api\controller\Article->update_article[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002683s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.013630s ]
+[ sql ] [ SQL ] UPDATE `api_article`  SET `article_id`=4,`article_title`='时间流逝',`article_content`='123456'  WHERE  `article_id` = 4 [ RunTime:0.003258s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:38:35+08:00 ] 127.0.0.1 DELETE api.restful-api.com/article?article_id=1
+[运行时间：0.133912s] [吞吐率：7.47req/s] [内存消耗：1,375.40kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '04c17a72-f6a5-4459-8bd6-255e35ff949a',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'article_id' => '1',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:158]
+---------------------------------------------------------------
+[ 2019-06-14T18:38:59+08:00 ] 127.0.0.1 DELETE api.restful-api.com/article
+[运行时间：0.138294s] [吞吐率：7.23req/s] [内存消耗：1,377.14kb] [文件加载：37]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'article',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '166',
+  'content-type' => 'multipart/form-data; boundary=--------------------------649595807048125722395517',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'c87e8629-4b48-4736-9485-cf93d0abab73',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  '----------------------------649595807048125722395517
+Content-Disposition:_form-data;_name' => '&quot;article_id&quot;
+
+1
+----------------------------649595807048125722395517--
+',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index[D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Common.php:158]
+---------------------------------------------------------------
+[ 2019-06-14T18:39:44+08:00 ] 127.0.0.1 DELETE api.restful-api.com/article/1/1/4
+[运行时间：0.155254s] [吞吐率：6.44req/s] [内存消耗：2,256.33kb] [文件加载：42]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'del_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------925398698349422765966744',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => '5ecb1c9e-4c0d-475a-9422-4c0909582c52',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Article->del_article[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003321s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.019330s ]
+[ sql ] [ SQL ] DELETE FROM `api_article`    WHERE  `article_id` = 4 [ RunTime:0.002558s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:44:20+08:00 ] 127.0.0.1 DELETE api.restful-api.com/article/1/1/1
+[运行时间：0.162420s] [吞吐率：6.16req/s] [内存消耗：2,258.37kb] [文件加载：42]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'del_article',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------989182082450892042777431',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'ace3fed9-a539-4977-88c7-d6ef57a9c937',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'article_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Article->del_article[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001896s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.018429s ]
+[ sql ] [ SQL ] UPDATE `api_article`  SET `article_isdel`=1  WHERE  `article_id` = 1 [ RunTime:0.003142s ]
+---------------------------------------------------------------
+[ 2019-06-14T18:44:37+08:00 ] 127.0.0.1 GET api.restful-api.com/articles/1/1/3/10/1
+[运行时间：0.154305s] [吞吐率：6.48req/s] [内存消耗：2,185.88kb] [文件加载：40]
+[ info ] [ LANG ] D:\myphp_www\PHPTutorial\project\restful-api\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------269952175842485861144353',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=gn7ib68fa7n5gbavs3q5493qf3',
+  'host' => 'api.restful-api.com',
+  'postman-token' => 'b4e4c5dd-943d-4fd9-9d65-009a4e797d46',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.15.0',
+)
+[ info ] [ PARAM ] array (
+  'time' => '1',
+  'token' => '1',
+  'user_id' => '3',
+  'num' => '10',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Article->article_list[ D:\myphp_www\PHPTutorial\project\restful-api\application\api\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001429s ] mysql:host=127.0.0.1;dbname=restful-api;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `api_article` [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `api_article` WHERE  `article_uid` = 3  AND `article_isdel` = 0 LIMIT 1 [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_ctime`,`article_title`,`user_nickname` FROM `api_article` `a` INNER JOIN `api_user` `u` ON `u`.`user_id`=`a`.`article_uid` WHERE  `article_uid` = 3  AND `article_isdel` = 0 LIMIT 0,10 [ RunTime:0.001381s ]
